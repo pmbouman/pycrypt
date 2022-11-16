@@ -1,0 +1,942 @@
+<!--- Online Exercises for Introduction to Mathematical Cryptography -->
+
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>Online Exercise Material for 
+    An Intro. to Math. Crypto.</TITLE>
+</HEAD>
+
+<!--
+     This page is stored at the following location:
+     www.math.brown.edu/~jhs/MathCrypto/ExerciseMaterial.html
+
+     It contains online versions of many of the exercises from
+     the book.
+
+-->
+
+<BODY BGCOLOR=LightBlue>
+<FONT FACE="ARIAL">
+
+<A NAME="topofpage"></A>
+<H1 ALIGN=CENTER>An Introduction to Mathematical Cryptography</H1>
+<H2 ALIGN=CENTER>Snippets from Selected Exercises</H2>
+<H2 ALIGN=CENTER>Jill Pipher, Jeffrey Hoffstein, Joseph H. Silverman</H2>
+<P>
+This page includes material from many of the exercises in the
+book. It is designed to save you time and potential errors, since you
+can cut-and-paste material, rather than having to retype it. (See the book
+for the complete statement of each problem.)
+
+<!----------- CHAPTER 1 -------------------->
+<H3 ALIGN=LEFT>CHAPTER 1 &mdash;
+An Introduction to Cryptography</H3>
+
+<P><B>Exercise 1.1 </B><BR>
+Build a cipher wheel ...
+<P>
+Click to download a 
+<A HREF="http://www.math.brown.edu/~jhs/MathCrypto/CipherWheel.pdf">
+<B>Cipher Wheel</B> 
+</A>
+that you can print and cut out to use for Exercise 1.1.
+</P>
+<P>(a)
+Encrypt the following plaintext...
+<BR>
+<TT>A page of history is worth a volume of logic.</TT>
+</P>
+<P>(b)
+Decrypt the following plaintext...
+<BR>
+<!--- <TT>AOLYLHYLUVZLJYLAZILAALYAOHUAOLZLJYLALZAOHALCLYFIVKFNBLZZLZ</TT> ---> 
+<TT>AOLYLHYLUVZLJYLAZILAALYAOHUAOLZLJYLAZAOHALCLYFIVKFNBLZZLZ</TT>
+</P>
+<P>(c)
+Decrypt the following plaintext...
+<BR>
+<TT>XJHRFTNZHMZGAHIUETXZJNBWNUTRHEPOMDNBJMAUGORFAOIZOCC</TT>
+</P>
+
+<P><B>Exercise 1.2 </B><BR>
+Decrypt each of the following Caesar encryptions...
+<P>(a)
+<TT>LWKLQNWKDWLVKDOOQHYHUVHHDELOOERDUGORYHOBDVDWUHH</TT>
+<P>(b)
+<TT>UXENRBWXCUXENFQRLQJUCNABFQNWRCJUCNAJCRXWORWMB</TT>
+<P>(c)
+<TT>BGUTBMBGZTFHNLXMKTIPBMAVAXXLXTEPTRLEXTOXKHHFYHKMAXFHNLX</TT>
+
+<P><B>Exercise 1.3 </B>
+<P>(a)
+Encrypt the plaintext message:
+<TT>The gold is hidden in the garden.</TT>
+<P>(c)
+Use your decryption table from (b) to decrypt the following message.
+<BR>
+<TT>IBXLX JVXIZ SLLDE VAQLL DEVAU QLB</TT>
+
+<P><B>Exercise 1.4 </B><BR>
+Each of the following messages has been encrypted using a simple
+substitution cipher. Decrypt them.
+<P>(a)
+<EM>A Piratical Treasure</EM>
+<BR>
+<TT>
+JNRZR BNIGI BJRGZ IZLQR OTDNJ GRIHT USDKR ZZWLG OIBTM NRGJN<BR>
+IJTZJ LZISJ NRSBL QVRSI ORIQT QDEKJ JNRQW GLOFN IJTZX QLFQL<BR>
+WBIMJ ITQXT HHTBL KUHQL JZKMM LZRNT OBIMI EURLW BLQZJ GKBJT<BR>
+QDIQS LWJNR OLGRI EZJGK ZRBGS MJLDG IMNZT OIHRK MOSOT QHIJL<BR>
+QBRJN IJJNT ZFIZL WIZTO MURZM RBTRZ ZKBNN LFRVR GIZFL KUHIM<BR>
+MRIGJ LJNRB GKHRT QJRUU RBJLW JNRZI TULGI EZLUK JRUST QZLUK<BR>
+EURFT JNLKJ JNRXR S
+</TT>
+</P>
+<P>(b)
+<EM>A Botanical Code</EM>
+<BR>
+<TT>
+KZRNK GJKIP ZBOOB XLCRG BXFAU GJBNG RIXRU XAFGJ BXRME MNKNG  <BR>
+BURIX KJRXR SBUER ISATB UIBNN RTBUM NBIGK EBIGR OCUBR GLUBN  <BR>
+JBGRL SJGLN GJBOR ISLRS BAFFO AZBUN RFAUS AGGBI NGLXM IAZRX  <BR>
+RMNVL GEANG CJRUE KISRM BOOAZ GLOKW FAUKI NGRIC BEBRI NJAWB  <BR>
+OBNNO ATBZJ KOBRC JKIRR NGBUE BRINK XKBAF QBROA LNMRG MALUF  <BR>
+BBG
+</TT>
+</P>
+<P>(c)
+<EM>A Brilliant Detective</EM>
+<BR>
+<TT>
+GSZES GNUBE SZGUG SNKGX CSUUE QNZOQ EOVJN VXKNG XGAHS AWSZZ  <BR>
+BOVUE SIXCQ NQESX NGEUG AHZQA QHNSP CIPQA OIDLV JXGAK CGJCG  <BR>
+SASUB FVQAV CIAWN VWOVP SNSXV JGPCV NODIX GJQAE VOOXC SXXCG  <BR>
+OGOVA XGNVU BAVKX QZVQD LVJXQ EXCQO VKCQG AMVAX VWXCG OOBOX  <BR>
+VZCSO SPPSN VAXUB DVVAX QJQAJ VSUXC SXXCV OVJCS NSJXV NOJQA  <BR>
+MVBSZ VOOSH VSAWX QHGMV GWVSX CSXXC VBSNV ZVNVN SAWQZ ORVXJ  <BR>
+CVOQE JCGUW NVA
+</TT>
+</P>
+
+<P><B>Exercise 1.7 </B><BR>
+... compute the following quotients and remainders.
+<P>(a)
+34787 divided by 353.
+<P>(b)
+238792 divided by 7843.
+<P>(c)
+9829387493 divided by 873485.
+<P>(d)
+1498387487 divided by 76348.
+
+<P><B>Exercise 1.8 </B><BR>
+... compute the following 
+remainders, without bothering to compute the associated quotients.
+<P>(a)
+The remainder of 78745 divided by 127.
+<P>(b)
+The remainder of 2837647 divided by 4387.
+<P>(c)
+The remainder of 8739287463 divided by 18754.
+<P>(d)
+The remainder of 4536782793 divided by 9784537.
+
+<P><B>Exercise 1.9 </B><BR>
+Use the Euclidean algorithm to compute the following greatest common
+divisors.
+<P>(a)
+gcd(291,252).
+<P>(b)
+gcd(16261,85652).
+<P>(c)
+gcd(139024789,93278890).
+<P>(d)
+gcd(16534528044,8332745927).
+
+<P><B>Exercise 1.12(c) </B><BR>
+Use your program to compute g=gcd(a,b) and integer solutions to the
+equation au+bv=g for the following pairs (a,b).
+<P>(i)
+(527,1258)
+<P>(ii)
+(228,1056)
+<P>(iii)
+(163961,167181)
+<P>(iv)
+(3892394,239847)
+
+<P><B>Exercise 1.28 </B><BR>
+Compute the following ord<SUB>p</SUB> values.
+<P>(a)
+Compute ord<SUB>2</SUB>(2816).
+<P>(b)
+Compute ord<SUB>7</SUB>(2222574487).
+<P>(c)
+Compute ord<SUB>p</SUB>(46375) for each of p=3, 5, 7, and 11.
+
+<P><B>Exercise 1.39 </B><BR>
+A <EM>transposition cipher</EM> is a cipher in which the letters of
+the plaintext remain the same, but their order is rearranged. ...
+<P>(a)
+Use this transposition cipher to encrypt the first 25 letters
+of the message
+<BR>
+<TT>Four score and seven years ago our forefathers ...</TT>
+<P>(b)
+The following message was encrypted using this
+transpostion cipher. Decrypt it.
+<BR>
+<TT>WNOOA HTUFN EHRHE NESUV ICEME</TT>
+<P>(c)
+There are many variations on this type of cipher.  ...
+Try to decrypt the following ciphertext ...
+<BR>
+<TT>WHNCE STRHT TEOOH ALBAT DETET SADHE</TT><BR>
+<TT>LEELL QSFMU EEEAT VNLRI ATUDR HTEEA</TT>
+
+<P><B>Exercise 1.44 </B><BR>
+<BR>(a)
+Convert the 12 bit binary number 110101100101 into a decimal integer
+between 0 and 2<SUP>12</SUP>&ndash;1.
+<P>(b)
+Convert the decimal integer m=37853 into a binary number.
+<P>(c)
+Convert the decimal integer m=9487428 into a binary number.
+<P>(d)
+Use exclusive or (XOR) to "add" the bit
+strings 11001010 &oplus; 10011010.
+<P>(e)
+Convert the decimal numbers 8734 and 5177 into binary numbers, combine
+them using XOR, and convert the result back into a decimal number.
+
+<P><B>Exercise 1.46 </B><BR>
+... 
+Demonstrate your attack by finding the private key used to encrypt the
+16 bit ciphertext c=1001010001010111 if you know that the
+corresponding plaintext is m=0010010000101100.
+
+<P><B>Exercise 1.48 </B><BR>
+Eve intercepts the following two ciphertexts:
+<P>
+c<SUB>1</SUB> = 12849217045006222,
+and
+c<SUB>2</SUB> = 6485880443666222.
+<P>
+Use the gcd method ... to find Bob and Alice's private key.
+
+
+<!----------- CHAPTER 2 -------------------->
+<H3 ALIGN=LEFT>CHAPTER 2 &mdash;
+Discrete Logarithms and Diffie&ndash;Hellman
+</H3>
+
+<P><B>Exercise 2.28 </B><BR>
+Use the Pohlig&ndash;Hellman Algorithm to solve the discrete logarithm
+problem...
+<P>(a)
+p = 433, g = 7, a = 166.
+<P>(b)
+p = 746497, g = 10, a = 243278.
+<P>(c)
+p = 41022299, g = 2, a = 39183497.
+(Hint: p=2*29<SUP>5</SUP>+1.)
+<P>(d)
+p = 1291799, g = 17, a = 192988.
+(Hint: p&ndash;1 has a factor of 709.)
+
+<P><B>Exercises 2.34 and 2.35 </B><BR>
+Let <B>a</B> and <B>b</B> be the polynomials
+<BR>
+  <B>a</B> = x<SUP>5</SUP> + 3x<SUP>4</SUP> - 5x<SUP>3</SUP> 
+        - 3x<SUP>2</SUP> + 2x + 2,
+<BR>
+  <B>b</B> = x<SUP>5</SUP> + x<SUP>4</SUP> - 2x<SUP>3</SUP> 
+        + 4x<SUP>2</SUP> + x + 5.
+<BR>
+Use the Euclidean algorithm...
+<P>
+Here are computer-friendly (cut-and-paste) versions of the
+same polyomials:
+<BR>
+  <B>a</B> = x^5 + 3x^4 - 5x^3 - 3x^2 + 2x + 2
+<BR>
+  <B>b</B> = x^5 + x^4 - 2x^3 + 4x^2 + x + 5
+
+<P><B>Exercises 2.37 </B><BR>
+Click here for a 
+<A HREF="http://www.math.brown.edu/~jhs/MathCrypto/Table2.5.pdf">
+PDF version of Table 2.5 
+</A>
+that you can print and use to fill in the blanks.
+
+
+<!----------- CHAPTER 3 -------------------->
+<H3 ALIGN=LEFT>CHAPTER 3 &mdash;
+Integer Factorization and RSA
+</H3>
+
+<P><B>Exercises 3.5(b) </B><BR>
+Solve the following congruences. ...
+<P>(i)
+x<SUP>577</SUP> &equiv; 60 (mod 1463).
+<P>(ii)
+x<SUP>959</SUP> &equiv; 1583 (mod 1625).
+<P>(iii)
+x<SUP>133957</SUP> &equiv; 224689 (mod 2134440).
+
+<P><B>Exercises 3.8 </B><BR>
+For each of the given values of N=pq and (p-1)(q-1), use
+the method described in Remark 3.10 to determine p and q. 
+<P>(a)
+N = pq = 352717
+and
+(p &ndash; 1)(q &ndash; 1) = 351520.
+<P>(b)
+N = pq = 77083921
+and
+(p &ndash; 1)(q &ndash; 1) = 77066212.
+<P>(c)
+N = pq = 109404161
+and
+(p &ndash; 1)(q &ndash; 1) = 109380612.
+<P>(d)
+N = pq = 172205490419
+and
+(p &ndash; 1)(q &ndash; 1) = 172204660344.
+
+<P><B>Exercises 3.9 </B><BR>
+A decryption exponent for an RSA public key (N,e) is an integer d with
+the property that...
+<P>(b)
+Let N = 38749709.  Eve's magic box tells her that the encryption
+exponent e = 10988423 has decryption exponent d = 16784693 and
+that the encryption exponent e = 25910155 has decryption exponent d
+= 11514115.  Use this information to factor N.
+<P>(c)
+Let N = 225022969.  Eve's magic box tells her the following three
+encryption/decryption pairs for N: 
+<BR>
+  (70583995,4911157), 
+ (173111957,7346999),  (180311381,29597249).
+<BR>
+Use this information to factor N.
+<P>(d)
+Let N = 1291233941.  Eve's magic box tells her the following three
+encryption/decryption pairs for N: 
+<BR>
+  (1103927639,76923209), 
+ (1022313977,106791263),  (387632407,7764043).
+<BR>
+Use this information to factor N.
+
+<P><B>Exercises 3.12 </B><BR>
+Alice decides to use RSA with the public key N = 1889570071. 
+In order to guard against transmission errors, Alice has Bob encrypt
+his message twice, once using the encryption exponent e<SUB>1</SUB> =
+1021763679 and once using the encryption exponent e<SUB>2</SUB> =
+519424709. Eve intercepts the two encrypted messages
+<BR>
+  c<SUB>1</SUB>=1244183534 and c<SUB>2</SUB>=732959706.
+<BR>
+Assuming that Eve also knows N and the two encryption
+exponents e<SUB>1</SUB> and e<SUB>2</SUB>, ... help Eve recover Bob's
+plaintext without finding a factorization of N.
+
+<P><B>Exercises 3.14 </B><BR>
+Use the Miller&ndash;Rabin test on each of the following numbers. ...
+<P>(a)
+n = 1105.
+<P>(b)
+n = 294409.
+<P>(c)
+n = 294439.
+<P>(d)
+n = 118901509.
+<P>(e)
+n = 118901521.
+<P>(f)
+n = 118901527.
+<P>(g)
+n =  118915387.
+
+<P><B>Exercises 3.21 </B><BR>
+Use Pollard's p&ndash;1 method to factor each of the following
+numbers. 
+<P>(a) 1739
+(b)  220459
+(c)  48356747
+
+<P><B>Exercises 3.24 </B><BR>
+For each of the listed values of N, k, and b<SUB>init</SUB>, factor N
+by making a list of values ...
+<P>(a)
+N = 143041,
+k = 247,
+b<SUB>init</SUB> = 1.
+<P>(b)
+N = 1226987,
+k = 3,
+b<SUB>init</SUB> = 36.
+<P>(c)
+N = 2510839,
+k = 21,
+b<SUB>init</SUB> = 90.
+
+<P><B>Exercises 3.27(c) </B><BR>
+The following is a list of 20 randomly chosen numbers between 1
+and 1000, sorted from smallest to largest. Which of these numbers are
+10-power-smooth? Which of them are 10-smooth?
+<BR>
+{84, 141, 171, 208, 224, 318, 325, 366, 378, 390, 420, 440, 
+  504, 530, 707, 726, 758, 765, 792, 817}
+
+
+<P><B>Exercises 3.41 </B><BR>
+Perform the following encryptions and decryptions using the
+Goldwasser&ndash;Micali public key cryptosystem...
+<P>(a)
+Bob's public key is the pair N = 1842338473 and a = 1532411781.  Alice
+encrypts three bits and sends Bob the ciphertext blocks
+<BR>
+  1794677960, 525734818, and 420526487.  
+<BR>
+Decrypt Alice's message using the factorization
+N = pq = 32411*56843.
+<P>(c)
+Bob's public key is N = 781044643 and a = 568980706.  Encrypt the
+three bits 1, 1, 0 using, respectively,  the three random values 
+<BR>
+  r =705130839,
+  r = 631364468,
+  r = 67651321.
+
+<!----------- CHAPTER 4 -------------------->
+<H3 ALIGN=LEFT>CHAPTER 4 &mdash;
+Probability Theory and Information Theory
+</H3>
+
+<P><B>Exercises 4.10 </B><BR>
+Encrypt each of the following Vigenere plaintexts using the given
+keyword ...
+<P>(a)
+Keyword: <TT>hamlet</TT>
+<BR>
+Plaintext: <TT>To be, or not to be, that is the question.</TT>
+<P>(b)
+Keyword: <TT>fortune</TT>
+<BR>
+Plaintext: <TT>The treasure is buried under the big W.</TT>
+
+<P><B>Exercises 4.11 </B><BR>
+Decrypt each of the following Vigenere ciphertexts using the given
+keyword ...
+<P>(a)
+Keyword: <TT>condiment</TT>
+<BR>
+Ciphertext:
+<BR>
+<TT>rsghz bmcxt dvfsq hnigq xrnbm </TT>
+<BR>
+<TT>pdnsq smbtr ku </TT>
+<P>(b)
+Keyword: <TT>rabbithole</TT>
+<BR>
+Ciphtertext:
+<BR>
+<TT>khfeq ymsci etcsi gjvpw ffbsq</TT>
+<BR>
+<TT>moapx zcsfx epsox yenpk daicx</TT>
+<BR>
+<TT>cebsm ttptx zooeq laflg kipoc</TT>
+<BR>
+<TT>zswqm taujw ghboh vrjtq hu  </TT>
+
+<P><B>Exercises 4.13 </B><BR>
+<B>s</B> = 
+<TT>I am the very model of a modern major general.</TT>
+<BR>
+<B>t</B> = 
+<TT>I have information vegatable, animal, and mineral.</TT>
+
+<P><B>Exercises 4.14 </B><BR>
+<B>s<SUB>1</SUB></B> = 
+<TT>iwseesetftuonhdptbunnybioeatneghictdnsevi</TT>
+<BR>
+<B>s<SUB>2</SUB></B> = 
+<TT>qibfhroeqeickxmirbqlflgkrqkejbejpepldfjbk</TT>
+<BR>
+<B>s<SUB>3</SUB></B> = 
+<TT>iesnnciiheptevaireittuevmhooottrtaaflnatg</TT>
+
+<P><B>Exercises 4.15 </B>
+<P>(a)
+<BR>
+s<SUB>1</SUB> = 
+<TT>RCZBWBFHSLPSCPILHBGZJTGBIBJGLYIJIBFHCQQFZBYFP</TT>
+<BR>
+s<SUB>2</SUB> = 
+<TT>KHQWGIZMGKPOYRKHUITDUXLXCWZOTWPAHFOHMGFEVUEJJ</TT>
+<P>(b)
+<BR>
+s<SUB>1</SUB> = 
+<TT>
+NTDCFVDHCTHKGUNGKEPGXKEWNECKEGWEWETWKUEVHDKKCDGCWXKDEEAMNHGNDIWUVWSSCTUNIGDSWKE
+</TT>
+<BR>
+s<SUB>2</SUB> = 
+<TT>
+IGWSKGEHEXNGECKVWNKVWNKSUTEHTWHEKDNCDXWSIEKDAECKFGNDCPUCKDNCUVWEMGEKWGEUTDGTWHD
+</TT>
+
+<P><B>Exercises 4.16 (Figure 4.4) </B><BR>
+<TT>
+nhqrk vvvfe fwgjo mzjgc kocgk lejrj wossy wgvkk hnesg kwebi<BR>
+bkkcj vqazx wnvll zetjc zwgqz zwhah kwdxj fgnyw gdfgh bitig<BR>
+mrkwn nsuhy iecru ljjvs qlvvw zzxyv woenx ujgyr kqbfj lvjzx<BR>
+dxjfg nywus rwoar xhvvx ssmja vkrwt uhktm malcz ygrsz xwnvl<BR>
+lzavs hyigh rvwpn ljazl nispv jahym ntewj jvrzg qvzcr estul<BR>
+fkwis tfylk ysnir rddpb svsux zjgqk xouhs zzrjj kyiwc zckov<BR>
+qyhdv rhhny wqhyi rjdqm iwutf nkzgd vvibg oenwb kolca mskle<BR>
+cuwwz rgusl zgfhy etfre ijjvy ghfau wvwtn xlljv vywyj apgzw<BR>
+trggr dxfgs ceyts tiiih vjjvt tcxfj hciiv voaro lrxij vjnok<BR>
+mvrgw kmirt twfer oimsb qgrgc
+</TT>
+
+<P><B>Exercises 4.17 (Figure 4.5) </B><BR>
+<TT>
+togmg gbymk kcqiv dmlxk kbyif vcuek cuuis vvxqs pwwej koqgg<BR>
+phumt whlsf yovww knhhm rcqfq vvhkw psued ugrsf ctwij khvfa<BR>
+thkef fwptj ggviv cgdra pgwvm osqxg hkdvt whuev kcwyj psgsn<BR>
+gfwsl jsfse ooqhw tofsh aciin gfbif gabgj adwsy topml ecqzw<BR>
+asgvs fwrqs fsfvq rhdrs nmvmk cbhrv kblxk gzi
+</TT>
+
+<P><B>Exercises 4.18 (Figure 4.6) </B><BR>
+<TT>
+mgodt beida psgls akowu hxukc iawlr csoyh prtrt udrqh cengx<BR>
+uuqtu habxw dgkie ktsnp sekld zlvnh wefss glzrn peaoy lbyig<BR>
+uaafv eqgjo ewabz saawl rzjpv feyky gylwu btlyd kroec bpfvt<BR>
+psgki puxfb uxfuq cvymy okagl sactt uwlrx psgiy ytpsf rjfuw<BR>
+igxhr oyazd rakce dxeyr pdobr buehr uwcue ekfic zehrq ijezr<BR>
+xsyor tcylf egcy
+</TT>
+
+<P><B>Exercises 4.19 </B><BR>
+<P>(a)
+Encrypt the following message using the autokey cipher:<BR>
+  Keyword: <TT>LEAR</TT><BR>
+  Plaintext: <TT>Come not between the dragon and his wrath.</TT>
+<P>(b)
+Decrypt the following message using the autokey cipher:<BR>
+  Keyword: <TT>CORDELIA</TT><BR>
+  Ciphertext: <TT>pckkm yowvz ejwzk knyzv vurux cstri tgac</TT>
+<P>(c)
+Eve intercepts an autokey ciphertext and manages to steal the
+accompanying plaintext:<BR>
+Plaintext: <TT>ifmusicbethefoodofloveplayon</TT><BR>
+Ciphertext: <TT>azdzwqvjjfbwnqphhmptjsszfjci</TT><BR>
+Help Eve to figure out the keyword that was used for encryption. 
+
+<!----------- CHAPTER 5 -------------------->
+<H3 ALIGN=LEFT>CHAPTER 5 &mdash;
+Elliptic Curves and Cryptography
+</H3>
+
+<P><B>Exercises 5.11 </B><BR>
+Convert the proof of Proposition 5.18 into an algorithm...
+<BR>
+(a) 349.
+(b) 9337.
+(c) 38728.
+(d) 8379483273489.
+
+<P><B>Exercises 5.18 </B><BR>
+Use the Elliptic Curve Factorization Algorithm to factor
+each of the numbers N using the given elliptic curve E and point P.
+<P>(a)
+N = 589,
+E : Y<SUP>2</SUP> = X<SUP>3</SUP> + 4X + 9,
+P = (2,5).
+<P>(b)
+N = 26167,
+E : Y<SUP>2</SUP> = X<SUP>3</SUP> + 4X + 128,
+P = (2,12).
+<P>(c)
+N = 1386493,
+E : Y<SUP>2</SUP> = X<SUP>3</SUP> + 3X &ndash; 3,
+P = (1,1).
+<P>(d)
+N = 28102844557,
+E : Y<SUP>2</SUP> = X<SUP>3</SUP> + 18X &ndash; 453,
+P = (7,4).
+
+<P><B>Exercises 5.24 </B><BR>
+Implement the algorithm in Exercise 523 and...
+<P>
+(a) n = 931,
+(b) n = 32755,
+(c) n = 82793729188.
+
+<!----------- CHAPTER 6 -------------------->
+<H3 ALIGN=LEFT>CHAPTER 6 &mdash;
+Lattices and Cryptography
+</H3>
+
+<P><B>Exercises 6.1 </B><BR>
+Alice uses the congruential cryptosystem with
+q = 918293817 and private key (f,g) = (19928,18643).
+<P>(b)
+Alice receives the ciphertext
+e = 619168806 from Bob. What is the plaintext?
+<P>(c)
+Bob sends Alice a second message by encrypting
+the plaintext m = 10220 using the ephemeral key
+r = 19564. What is the ciphertext that Bob sends to Alice?
+
+<P><B>Exercises 6.2 </B><BR>
+Use the algorithm described in Proposition 6.5
+to "solve" each of the following subset-sum problems.
+If the "solution" that you get is not correct, explain what
+went wrong.
+<P>(a)
+<B>M</B> = (3, 7, 19, 43, 89, 195), S = 260.
+<P>(b)
+<B>M</B> = (5, 11, 25, 61, 125, 261), S = 408.
+<P>(c)
+<B>M</B> = (2, 5, 12, 28, 60, 131, 257), S = 334.
+<P>(d)
+<B>M</B> = (4, 12, 15, 36, 75, 162), S = 214.
+
+<P><B>Exercises 6.3 </B><BR>
+Alice's public key for a knapsack cryptosystem is
+<BR>
+  <B>M</B> = (5186, 2779, 5955, 2307, 6599, 6771, 6296, 7306, 4115, 7039).
+<BR>
+Eve intercepts the encrypted message S = 26560.  She also breaks
+into Alice's computer and steals Alice's secret multiplier A = 4392,
+and secret modulus B = 8387. Use this information to find Alice's
+superincreasing private sequence <B>r</B> and then decrypt the message.
+
+<P><B>Exercises 6.18 </B><BR>
+Alice uses the GGH cryptosystem with private basis
+<BR>
+<B>v</B><SUB>1</SUB> = (4, 13)
+and
+<B>v</B><SUB>2</SUB> = (-57, -45)
+<BR>
+and public basis
+<BR>
+<B>w</B><SUB>1</SUB> = (25453, 9091)
+and
+<B>w</B><SUB>2</SUB> = (-16096, -5749).
+<P>(b)
+Bob sends Alice the encrypted message
+<B>e</B> = (155340, 55483). Use Alice's private basis
+to decrypt the message and recover the plaintext. Also determine
+Bob's random perturbation <B>r</B>.
+
+<P><B>Exercises 6.19 </B><BR>
+Alice uses the GGH cryptosystem with private basis
+<BR>
+<B>v</B><SUB>1</SUB> = (58, 53, -68),
+<B>v</B><SUB>2</SUB> = (-110, -112, 35),
+<B>v</B><SUB>3</SUB> = (-10, -119, 123).
+<BR>
+and public basis
+<BR>
+<B>w</B><SUB>1</SUB> = (324850, -1625176, 2734951),
+<B>w</B><SUB>2</SUB> = (165782, -829409, 1395775),
+<B>w</B><SUB>3</SUB> = (485054, -2426708, 4083804).
+<P>(b)
+Bob sends Alice the encrypted message
+<B>e</B> = (8930810, -44681748, 75192665). Use Alice's private basis
+to decrypt the message and recover the plaintext. Also determine
+Bob's random perturbation <B>r</B>.
+
+<!------ 
+   *** could put in polys in 6.22, 6.25, 6.26(c), 6.27, 6.28, 6.30(b)
+------->
+
+<P><B>Exercises 6.40 </B><BR>
+Let L be the lattice generated by the rows of the matrix
+<BR>
+<TT>
+<TABLE>
+<TR>
+  <TD>20</TD> <TD>51</TD> <TD>35</TD> <TD>59</TD> <TD>73</TD> <TD>73</TD>
+</TR>
+<TR>
+  <TD>14</TD> <TD>48</TD> <TD>33</TD> <TD>61</TD> <TD>47</TD> <TD>83</TD>
+</TR>
+<TR>
+  <TD>95</TD> <TD>41</TD> <TD>48</TD> <TD>84</TD> <TD>30</TD> <TD>45</TD>
+</TR>
+<TR>
+  <TD ALIGN=RIGHT>0</TD> <TD>42</TD> <TD>74</TD> <TD>79</TD> <TD>20</TD> <TD>21</TD>
+</TR>
+<TR>
+  <TD ALIGN=RIGHT>6</TD> <TD>41</TD> <TD>49</TD> <TD>11</TD> <TD>70</TD> <TD>67</TD>
+</TR>
+<TR>
+  <TD>23</TD> <TD>36</TD> <TD ALIGN=RIGHT>6</TD> <TD ALIGN=RIGHT>1</TD> <TD>46</TD> <TD ALIGN=RIGHT>4</TD>
+</TR>
+</TABLE>
+</TT>
+
+<P><B>Exercises 6.44 </B><BR>
+Babai's <EM>Closest Plane Algorithm</EM>, is an alternative rounding
+method that uses a given basis to solve apprCVP.
+<P>(a)
+L is the lattice generated by the rows of the matrix
+<BR>
+<TT>
+<TABLE>
+<TR><TD ALIGN=RIGHT>-5</TD> <TD ALIGN=RIGHT>16</TD> <TD ALIGN=RIGHT>25</TD> <TD ALIGN=RIGHT>25</TD> <TD ALIGN=RIGHT>13</TD> <TD ALIGN=RIGHT>8</TD></TR>
+<TR><TD ALIGN=RIGHT>26</TD> <TD ALIGN=RIGHT>-3</TD> <TD ALIGN=RIGHT>-11</TD> <TD ALIGN=RIGHT>14</TD> <TD ALIGN=RIGHT>5</TD> <TD ALIGN=RIGHT>-26</TD></TR>
+<TR><TD ALIGN=RIGHT>15</TD> <TD ALIGN=RIGHT>-28</TD> <TD ALIGN=RIGHT>16</TD> <TD ALIGN=RIGHT>-7</TD> <TD ALIGN=RIGHT>-21</TD> <TD ALIGN=RIGHT>-4</TD></TR>
+<TR><TD ALIGN=RIGHT>32</TD> <TD ALIGN=RIGHT>-3</TD> <TD ALIGN=RIGHT>7</TD> <TD ALIGN=RIGHT>-30</TD> <TD ALIGN=RIGHT>-6</TD> <TD ALIGN=RIGHT>26</TD></TR>
+<TR><TD ALIGN=RIGHT>15</TD> <TD ALIGN=RIGHT>-32</TD> <TD ALIGN=RIGHT>-17</TD> <TD ALIGN=RIGHT>32</TD> <TD ALIGN=RIGHT>-3</TD> <TD ALIGN=RIGHT>11</TD></TR>
+<TR><TD ALIGN=RIGHT>5</TD> <TD ALIGN=RIGHT>24</TD> <TD ALIGN=RIGHT>0</TD> <TD ALIGN=RIGHT>-13</TD> <TD ALIGN=RIGHT>-46</TD> <TD ALIGN=RIGHT>15</TD></TR>
+</TABLE>
+</TT>
+<BR>
+and the target vector is <B>t</B> = (-178, 117, -407, 419, -4, 252).
+<P>(b)
+L is the lattice generated by the rows of the matrix
+<BR>
+<TT>
+<TABLE>
+<TR><TD ALIGN=RIGHT>-33</TD> <TD ALIGN=RIGHT>-15</TD> <TD ALIGN=RIGHT>22</TD> <TD ALIGN=RIGHT>-34</TD> <TD ALIGN=RIGHT>-32</TD> <TD ALIGN=RIGHT>41</TD></TR>
+<TR><TD ALIGN=RIGHT>10</TD> <TD ALIGN=RIGHT>9</TD> <TD ALIGN=RIGHT>45</TD> <TD ALIGN=RIGHT>10</TD> <TD ALIGN=RIGHT>-6</TD> <TD ALIGN=RIGHT>-3</TD></TR>
+<TR><TD ALIGN=RIGHT>-32</TD> <TD ALIGN=RIGHT>-17</TD> <TD ALIGN=RIGHT>43</TD> <TD ALIGN=RIGHT>37</TD> <TD ALIGN=RIGHT>29</TD> <TD ALIGN=RIGHT>-30</TD></TR>
+<TR><TD ALIGN=RIGHT>26</TD> <TD ALIGN=RIGHT>13</TD> <TD ALIGN=RIGHT>-35</TD> <TD ALIGN=RIGHT>-41</TD> <TD ALIGN=RIGHT>42</TD> <TD ALIGN=RIGHT>-15</TD></TR>
+<TR><TD ALIGN=RIGHT>-50</TD> <TD ALIGN=RIGHT>32</TD> <TD ALIGN=RIGHT>18</TD> <TD ALIGN=RIGHT>35</TD> <TD ALIGN=RIGHT>48</TD> <TD ALIGN=RIGHT>45</TD></TR>
+<TR><TD ALIGN=RIGHT>2</TD> <TD ALIGN=RIGHT>-5</TD> <TD ALIGN=RIGHT>-2</TD> <TD ALIGN=RIGHT>-38</TD> <TD ALIGN=RIGHT>38</TD> <TD ALIGN=RIGHT>41</TD></TR>
+</TABLE>
+</TT>
+<BR>
+and the target vector is <B>t</B> = (-126, -377, -196, 455, -200, -234).
+
+<P><B>Exercises 6.45 </B><BR>
+You have been spying on George for some time and overhear him receive
+a ciphertext e=83493429501 that has been encrypted using the
+congruential cryptosystem.  You
+also know that George's public key is h = 24201896593 and the public
+modulus is q = 148059109201. Use Gaussian lattice reduction to
+recover George's private key (f,g) and the message m.
+
+<P><B>Exercises 6.46 </B><BR>
+Let
+<BR>
+  <B>M</B> = 
+  (81946, 80956, 58407, 51650, 38136, 17032, 39658, 67468, 49203, 9546)
+</BR>
+and let S = 168296.  Use the LLL algorithm to solve the subset-sum
+problem for <B>M</B> and S.
+
+<P><B>Exercises 6.47 </B><BR>
+Alice and Bob communicate using the GGH cryptosystem. Alice's public key
+is the lattice generated by the rows of the matrix
+<TT>
+<TABLE>
+<TR><TD ALIGN=RIGHT>10305608</TD> <TD ALIGN=RIGHT>-597165</TD> <TD ALIGN=RIGHT>45361210</TD> <TD ALIGN=RIGHT>39600006</TD> <TD ALIGN=RIGHT>12036060</TD></TR>
+<TR><TD ALIGN=RIGHT>-71672908</TD> <TD ALIGN=RIGHT>4156981</TD> <TD ALIGN=RIGHT>-315467761</TD> <TD ALIGN=RIGHT>-275401230</TD> <TD ALIGN=RIGHT>-83709146</TD></TR>
+<TR><TD ALIGN=RIGHT>-46304904</TD> <TD ALIGN=RIGHT>2685749</TD> <TD ALIGN=RIGHT>-203811282</TD> <TD ALIGN=RIGHT>-177925680</TD> <TD ALIGN=RIGHT>-54081387</TD></TR>
+<TR><TD ALIGN=RIGHT>-68449642</TD> <TD ALIGN=RIGHT>3969419</TD> <TD ALIGN=RIGHT>-301282167</TD> <TD ALIGN=RIGHT>-263017213</TD> <TD ALIGN=RIGHT>-79944525</TD></TR>
+<TR><TD ALIGN=RIGHT>-46169690</TD> <TD ALIGN=RIGHT>2677840</TD> <TD ALIGN=RIGHT>-203215644</TD> <TD ALIGN=RIGHT>-177405867</TD> <TD ALIGN=RIGHT>-53923216</TD></TR>
+</TABLE>
+</TT>
+Bob sends her the encypted message
+<BR>
+  <B>e</B> = (388120266, -22516188, 1708295783, 1491331246, 453299858).
+<BR>
+Use LLL to find a reduced basis for Alice's lattice and then use Babai's
+algorithm to decrypt Bob's message.
+
+<!----------- CHAPTER 7 -------------------->
+<H3 ALIGN=LEFT>CHAPTER 7 &mdash;
+Digital Signatures
+</H3>
+
+<P><B>Exercises 7.1 </B><BR>
+Samantha uses the RSA signature scheme with primes
+p = 541 and q = 1223 and public verification exponent v = 159853.
+<P>(a)
+What is Samantha's public modulus?  What is her private signing key?
+<P>(b)
+Samantha signs the digital document D = 630579. What is the signature?
+
+<P><B>Exercises 7.2 </B><BR>
+Samantha uses the RSA signature scheme with public modulus N = 1562501
+and public verification exponent v = 87953.  Adam claims that
+Samantha has signed each of the documents
+<BR>
+  D   = 119812,
+  D'  = 161153,
+  D'' = 586036,
+<BR>
+and that the associated signatures are
+<BR>
+  S = 876453,
+  S' = 870099,
+  S'' = 602754.
+<BR>
+Which of these are valid signatures?
+
+<P><B>Exercises 7.3 </B><BR>
+Samantha uses the RSA signature scheme with public modulus
+and public verification exponent 
+<BR>
+  N = 27212325191 and
+  v = 22824469379.
+<BR>
+Use whatever method you want to factor N, and then forge Samantha's
+signature on the document D = 12910258780.
+
+<P><B>Exercises 7.7 </B><BR>
+Suppose that Samantha is using the ElGamal signature scheme and that she
+is careless and uses the same ephemeral key e to sign two documents D
+and D'.
+<P>(c)
+Apply your method from (b) to the following example and 
+recover Samantha's signing key s, where Samantha
+is using the prime p = 348149, base g = 113459,
+and verfication key v = 185149.
+<BR>
+   D   = 153405,
+   S<SUB>1</SUB> = 208913,
+   S<SUB>2</SUB> = 209176,
+<BR>
+   D'    = 127561,
+   S<SUB>1</SUB>'  = 208913,
+   S<SUB>2</SUB>'  = 217800.
+
+<P><B>Exercises 7.13 </B><BR>
+Samantha uses the GGH digital signature scheme with private 
+and public bases 
+<BR>
+  <B>v</B><SUB>1</SUB> = (-20,-8,1),
+  <B>w</B><SUB>1</SUB> = (-248100,220074,332172),
+<BR>
+  <B>v</B><SUB>2</SUB> = (14,11,23),
+  <B>w</B><SUB>2</SUB> = (-112192,99518,150209),
+<BR>
+  <B>v</B><SUB>3</SUB> = (-18,1,-12),
+  <B>w</B><SUB>3</SUB> = (-216150,191737,289401).
+<BR>
+What is her signature on the document
+<BR>
+  <B>d</B> = (834928, 123894, 7812738)?
+
+<P><B>Exercises 7.14 </B><BR>
+Samantha uses the GGH digital signature scheme with  
+public basis 
+<BR>
+  <B>w</B><SUB>1</SUB> = (3712318934,-14591032252,11433651072),<BR>
+  <B>w</B><SUB>2</SUB> = (-1586446650,6235427140,-4886131219),<BR>
+  <B>w</B><SUB>3</SUB> = (305711854,-1201580900,941568527).
+<BR>
+She publishes the signature
+<BR>
+  (6987814629, 14496863295, -9625064603)
+<BR>
+on the document
+<BR>
+  <B>d</B> = (5269775, 7294466, 1875937).
+<BR>
+If the maximum allowed distance from the signature to the document
+is 60, verify that Samantha's signature is valid.
+
+
+<P><B>Exercises 7.15 </B><BR>
+Samantha uses the GGH digital signature scheme with public basis
+<BR>
+  <B>w</B><SUB>1</SUB> = (-1612927239,1853012542,1451467045),<BR>
+  <B>w</B><SUB>2</SUB> = (-2137446623,2455606985,1923480029),<BR>
+  <B>w</B><SUB>3</SUB> = (2762180674,-3173333120,-2485675809).
+<BR>
+Use LLL or some other lattice reduction algorithm to find a good basis
+for Samantha's lattice, and then use the good basis to help Eve forge
+a signature on the document
+<BR>
+  <B>d</B> = (87398273893, 763829184, 118237397273).
+<BR>
+What is the distance from your forged signature lattice vector to
+the target vector? (You should be able to get a distance smaller
+than 100.)
+
+<P><B>Exercises 7.16 </B><BR>
+Samantha uses an NTRU digital signature with (N,q,d) = (11,23,3).
+<P>(a)
+Samantha's private key is
+<BR>
+  <B>f</B> = (1, -1, 1, 0, 1, 0, -1, 1, 0, -1, 0), <BR>
+  <B>g</B> = (0, -1, 0, 1, 1, 0, 0, 1, -1, 1, -1),  <BR>
+  <B>F</B> = (0, -1, -1, 1, -3, -1, 0, -3, -3, -2, 2),  <BR>
+  <B>G</B> = (-3, -1, 2, 4, 3, -4, -1, 3, 5, 5, -1).
+ <BR>
+She uses her private key to sign the digital
+document <B>D</B>=(<B>D</B><SUB>1</SUB>,<B>D</B><SUB>2</SUB>) given by
+ <BR>
+  <B>D</B><SUB>1</SUB> = (0, 8, -6, -6, -5, -1, 9, -2, -6, -4, -6),  <BR>
+  <B>D</B><SUB>2</SUB> = (9, 9, -10, 2, -3, 2, 6, 6, 5, 0, 8).
+ <BR>
+Compute the signature <B>s</B>.
+<P>(b)
+Samantha's public verification key is
+<BR>
+  <B>h</B> = (5, 8, -5, -11, 8, 8, 8, 5, 3, -10, 5).
+<BR>
+Compute the other part of the
+signature <B>t</B> &equiv; <B>h</B> * <B>s</B> (mod q) and find the
+distance between the lattice vector (<B>s</B>,<B>t</B>) and the target
+vector <B>D</B>.
+<P>(c)
+Suppose that Eve attempts to sign <B>D</B> using Samantha's public
+vectors (<B>1</B>,<B>h</B>) and (<B>0</B>,<B>q</B>). What
+signature (<B>s</B>',<B>t</B>') does she get and how far is it from the
+target vector <B>D</B>?
+
+<P><B>Exercises 7.17 </B><BR>
+Samantha uses an NTRU digital signature with (N,q,d) = (11,23,3).
+<P>(a)
+She creates a private key using the ternary vectors
+<BR>
+  <B>f</B> = (1, 1, 1, 1, 0, -1, -1, 0, 0, 0, -1), <BR>
+  <B>g</B> = (-1, 0, 1, 1, -1, 0, 0, 1, -1, 0, 1).
+<BR>
+Use the algorithm described in Table 7.6 to find short
+vectors <B>F</B> and <B>G</B> satsifying
+<B>f</B> * <B>G</B>-<B>g</B> * <B>F</B> = q.
+<P>(b)
+Samantha uses the private signing key
+(<B>f</B>,<B>g</B>,<B>F</B>,<B>G</B>) to sign the digital document
+<B>D</B>=(<B>D</B><SUB>1</SUB>,<B>D</B><SUB>2</SUB>) given by
+<BR>
+  <B>D</B><SUB>1</SUB> = (5, 5, -5, -10, 3, -7, -3, 2, 0, -5, -11), <BR>
+  <B>D</B><SUB>2</SUB> = (8, 9, -10, -7, 6, -3, 1, 4, 4, 4, -7).
+<BR>
+What the signature <B>s</B>?
+<P>(c)
+What is Samantha's public verification key <B>h</B>?
+<P>(d)
+Compute <B>t</B> &equiv; <B>h</B> * <B>s</B> (mod q) and determine
+the distance from the lattice vector (<B>s</B>,<B>t</B>) to the target
+vector <B>D</B>.
+
+
+<!---------------------------------------------------------------------->
+<HR>
+
+<P>
+Return to
+<A HREF="#topofpage">Top of Page</A>.
+<BR>
+Return to the
+<A HREF="http://www.math.brown.edu/~jhs/MathCryptoHome.html">
+<EM>Intro to Math Crypto</EM> Home Page
+</A>.
+
+</BODY>
+</HTML>
